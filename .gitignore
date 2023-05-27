@@ -1,0 +1,10 @@
+__pycache__
+.vscode
+.secrets.*
+.git
+.pytest_cache
+.coverage
+coverage.xml
+logs/
+*.log
+wav/

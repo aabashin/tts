@@ -1,0 +1,18 @@
+---
+version: "1.0"
+
+services:
+  tts:
+    build: .
+    container_name: tts
+    ports:
+      - "7700:7700"
+    volumes:
+      - $PWD/logs/tts.log:/app/logs/tts.log:rw
+      - $PWD/settings.toml:/app/settings.toml:rw
+    restart: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "10"
