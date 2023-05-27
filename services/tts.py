@@ -42,5 +42,5 @@ class TTS:
             put_accent=self.put_accent,
             put_yo=self.put_yo,
         )
-        
+
         return temp_file

@@ -1,3 +1,9 @@
+![Python version](https://img.shields.io/badge/python-%3E%3D3.8-green)
+[![Issues](https://img.shields.io/github/issues-raw/aabashin/tts)](https://github.com/aabashin/tts/issues)
+
+![Linter](https://github.com/aabashin/tts/workflows/Linter/badge.svg)
+![Formatter](https://github.com/aabashin/tts/workflows/Formatter/badge.svg)
+
 # Text-To-Speach
 
 Simple TTS service based on [russian neural model](https://github.com/snakers4/silero-models) and [normalize neural model](https://github.com/snakers4/russian_stt_text_normalization) by Silero
