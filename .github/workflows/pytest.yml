@@ -28,7 +28,7 @@ jobs:
       run: poetry install --no-interaction --no-root
     - name: Test with pytest
       run: |
-        poetry run pytest --cov=tts --cov-report=xml
+        poetry run pytest --cov=. --cov-report=xml
     - name: Upload coverage
       uses: codecov/codecov-action@v3
       with:
