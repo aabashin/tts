@@ -26,8 +26,8 @@ jobs:
     - name: Install dependencies
       if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
       run: poetry install --no-interaction --no-root --no-dev
-      run: pip install pytest
-      run: pip install pytest-cov
+    - name: Install pytest
+      run: pip install pytest && pip install pytest-cov
     - name: Test with pytest
       run: |
         python -m pytest --cov=/tts/tts --cov-report=xml
