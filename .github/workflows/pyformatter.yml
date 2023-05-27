@@ -1,4 +1,4 @@
-name: Check format with black
+name: Formatter
 
 on: [push]
 

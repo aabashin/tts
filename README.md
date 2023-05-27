@@ -1,4 +1,5 @@
-![Linter](https://github.com/aabashin/tts/workflows/Lint%20with%20flake8/badge.svg)
+![Linter](https://github.com/aabashin/tts/workflows/Linter/badge.svg)
+![Linter](https://github.com/aabashin/tts/workflows/Formatter/badge.svg)
 
 # Text-To-Speach
 
