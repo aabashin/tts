@@ -1,4 +1,4 @@
-name: Pylint
+name: Lint with flake8
 
 on: [push]
 
@@ -20,4 +20,5 @@ jobs:
         pip install flake8
     - name: Analysing the code with flake8
       run: |
-        flake8 . --statistics
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        flake8 . --count --exit-zero --max-complexity=15 --max-line-length=160 --statistics
