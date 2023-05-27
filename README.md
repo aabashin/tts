@@ -1,3 +1,7 @@
+![Python version](https://img.shields.io/badge/python-%3E%3D3.8-green)
+[![Issues](https://img.shields.io/github/issues-raw/aabashin/tts)](https://github.com/aabashin/tts/issues)
+[![Commits](https://img.shields.io/github/last-commit/aabashin/tts/master)](https://github.com/aabashin/tts/commits/master)
+
 ![Linter](https://github.com/aabashin/tts/workflows/Linter/badge.svg)
 ![Formatter](https://github.com/aabashin/tts/workflows/Formatter/badge.svg)
 
