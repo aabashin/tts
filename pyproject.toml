@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "tts"
+version = "0.1.0"
+description = ""
+authors = ["A.Abashin <an_abashin@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+dynaconf = "^3.1.12"
+torch = "1.10.0"
+websockets = "^11.0.2"
+tqdm = "^4.65.0"
+aiofiles = "^23.1.0"
+numpy = "^1.24.3"
+sanic = "^23.3.0"
+requests = "^2.30.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+flake8 = "^6.0.0"
+pytest = "^7.3.1"
+coverage = "^7.2.3"
+pytest-asyncio = "^0.21.0"
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

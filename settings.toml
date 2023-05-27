@@ -1,0 +1,33 @@
+# basic settings
+LOG_LEVEL = "info"
+LOG_DIR = "logs"
+LOG_FILE = "logs/tts.log"
+LOCAL_OUT_DIR = "wav/"
+DEVICE = "cpu"
+
+# Web Server settings
+HOST_IP = "0.0.0.0"
+HOST_PORT = "7700"
+RELOAD = true
+
+# TTS settings
+NUM_TO_TEXT_MODEL = "tts_model/num_to_text.pt"
+PATH_TTS_MODEL = "./tts_model/model_v3.pt"
+# config for model v3
+SPEAKER = "xenia"  # "aidar", "baya", "kseniya", "xenia"
+SAMPLE_RATE = "24000"  # 8000, 24000, 48000
+PUT_ACCENT = true # автоматическая расстановка ударений
+PUT_YO = false # расстановка буквы Ё
+
+# logger messages
+POST_OK = "Message received and sent to TTS"
+POST_ERROR = "The message has not 'text' key"
+WEB_SERVER_START = "Web server started"
+ERROR_RUS_SYMBOL = "Error: no russian symbols in text"
+ERROR_POST_RESPONSE = "Error with create POST response"
+MESSAGE_PREPARE = "Text prepared"
+MESSAGE_SEND = "File is sending to user..."
+MESSAGE_SAVE = "File saved to wav dir"
+RECEIVE_GET = "Receive GET request"
+RM_FILE_OK = "Temp file removed"
+RM_FILE_ERROR = "Error with remove temp file: "
