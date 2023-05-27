@@ -4,7 +4,7 @@
 ![Linter](https://github.com/aabashin/tts/workflows/Linter/badge.svg)
 ![Formatter](https://github.com/aabashin/tts/workflows/Formatter/badge.svg)
 
-# Text-To-Speach
+# Text-To-Speech
 
 Simple TTS service based on [russian neural model](https://github.com/snakers4/silero-models) and [normalize neural model](https://github.com/snakers4/russian_stt_text_normalization) by Silero
 
