@@ -12,6 +12,9 @@ RUN pip install poetry \
     && poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi --no-dev
 
+RUN mkdir /app/logs && touch tts.log
+RUN chmod -R 777 /app/logs
+
 EXPOSE 7700
 
 CMD [ "python", "main.py" ]

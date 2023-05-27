@@ -7,7 +7,7 @@ from logging.handlers import RotatingFileHandler
 class LoggerConfig:
     @classmethod
     def get_logger(cls):
-        # check if log file not create
+        # check if log file not create for local start
         if not os.path.isfile(settings.LOG_FILE):
             if not os.path.exists(settings.LOG_DIR):
                 os.mkdir(settings.LOG_DIR)

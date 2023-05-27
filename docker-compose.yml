@@ -8,7 +8,7 @@ services:
     ports:
       - "7700:7700"
     volumes:
-      - $PWD/logs/tts.log:/app/logs/tts.log:rw
+      - $PWD/logs:/app/logs:rw
       - $PWD/settings.toml:/app/settings.toml:rw
     restart: always
     logging:
