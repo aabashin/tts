@@ -1,3 +1,5 @@
+![Linter](https://github.com/aabashin/tts/workflows/Lint%20with%20flake8/badge.svg)
+
 # Text-To-Speach
 
 Simple TTS service based on [russian neural model](https://github.com/snakers4/silero-models) and [normalize neural model](https://github.com/snakers4/russian_stt_text_normalization) by Silero
