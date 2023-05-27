@@ -15,6 +15,7 @@ class Normalizer:
     -------
     norm_text - main method
     """
+
     def __init__(self, device="cpu") -> None:
         super(Normalizer, self).__init__()
 
@@ -160,7 +161,7 @@ class Normalizer:
                         curr_point += 1
         return "".join(norm_parts)
 
-    def decode_words(self, pred: torch.Tensor, unk_list: list=None) -> str:
+    def decode_words(self, pred: torch.Tensor, unk_list: list = None) -> str:
         if unk_list is None:
             unk_list = []
         pred = pred.cpu().numpy()
@@ -173,7 +174,7 @@ class Normalizer:
         )
         return pred_words
 
-    def lookup_words(self, x: torch.Tensor, vocab: dict, unk_list: list=None) -> list:
+    def lookup_words(self, x: torch.Tensor, vocab: dict, unk_list: list = None) -> list:
         if unk_list is None:
             unk_list = []
         result = []

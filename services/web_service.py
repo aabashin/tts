@@ -17,7 +17,7 @@ file_service = FileService()
 
 def preprocessing_text(text: str) -> str:
     """
-    prepare text: all numeral written digits changes on 
+    prepare text: all numeral written digits changes on
     word written numbers and drop latin symbols
     """
     if set("1234567890") & set(text):
@@ -28,8 +28,8 @@ def preprocessing_text(text: str) -> str:
 class WebService:
     """
     Web-server by Sanic
-    
-    receive POST request with text, send to TTS service and 
+
+    receive POST request with text, send to TTS service and
     send response with audio
 
     receive GET request and send the simple message, like ping-pong
@@ -46,15 +46,15 @@ class WebService:
     async def post_handler(self):
         if "text" in self.json:
             text = preprocessing_text(self.json["text"])
-            
+
             regex = "^[+.,!?…:;_~ ]+$"
             pattern = re.compile(regex)
             find_symb = pattern.search(text) is not None
-            
+
             if text == "" or find_symb:
                 text = settings.ERROR_RUS_SYMBOL
                 logger.error(f"settings.ERROR_RUS_SYMBOL text: {text}")
-            
+
             logger.debug(f"{settings.MESSAGE_PREPARE}: {text}")
             temp_file = tts_service.synthesize(text)
 

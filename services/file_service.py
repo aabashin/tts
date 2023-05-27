@@ -2,6 +2,7 @@ import os
 
 from config import settings
 
+
 class FileService:
     """
     Service for make action with files
@@ -11,6 +12,7 @@ class FileService:
 
     remove_temp_file - delete file by path and return result - string type
     """
+
     def remove_temp_file(self, file_path: str) -> str:
         try:
             os.remove(file_path)
