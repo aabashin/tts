@@ -30,6 +30,32 @@ class TTS:
         self.put_accent = settings.PUT_ACCENT
         self.put_yo = settings.PUT_YO
 
+        # example_text = 'В недрах тундры выдры в г+етрах т+ырят в вёдра ядра к+едров.'
+
+        # language = 'ru'
+        # model_id = 'v4_ru'
+        # device = torch.device('cpu')
+
+        # model, example_text = torch.hub.load(repo_or_dir='./tts_model',
+        #                                     model='v4_ru.pt',
+        #                                     language=language,
+        #                                     speaker=model_id)
+        # model.to(device)
+
+        # sample_rate = 48000
+        # speaker = self.speaker
+        # put_accent=True
+        # put_yo=True
+        
+
+        # audio = model.apply_tts(text=example_text,
+        #                         speaker=speaker,
+        #                         sample_rate=sample_rate,
+        #                         put_accent=put_accent,
+        #                         put_yo=put_yo)
+        # print(example_text)
+        # display(Audio(audio, rate=sample_rate))
+
     def synthesize(self, text: str) -> str:
         if not os.path.exists(settings.LOCAL_OUT_DIR):
             os.mkdir(settings.LOCAL_OUT_DIR)

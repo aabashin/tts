@@ -16,7 +16,7 @@ cd tts
 docker-compose up -d
 ```
 
-You can try to send POST request on `http://127.0.0.1:7700` with body like this:
+You can try to send POST request on `http://127.0.0.1:7700/tts` with body like this:
 
 ```bash
 {"text": "Текст для проверки произношения."}
