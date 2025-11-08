@@ -11,9 +11,8 @@ HOST_PORT = "7700"
 RELOAD = true
 
 # TTS settings
-NUM_TO_TEXT_MODEL = "tts_model/num_to_text.pt"
-PATH_TTS_MODEL = "./tts_model/model_v3.pt"
-# config for model v3
+PATH_TTS_MODEL = "./tts_model/v5_ru.pt"
+# config for model
 SPEAKER = "xenia"  # "aidar", "baya", "kseniya", "xenia"
 SAMPLE_RATE = "24000"  # 8000, 24000, 48000
 PUT_ACCENT = true # автоматическая расстановка ударений

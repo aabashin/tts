@@ -1,7 +1,12 @@
 import pytest
+import sys
+import os
+
+# Добавляем корневую директорию проекта в Python path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from services.file_service import FileService
-from services.normalizer import Normalizer
+from services.normalizer import AdvancedNormalizer
 from services.tts import TTS
 
 
@@ -12,7 +17,7 @@ def tts_service():
 
 @pytest.fixture(scope="session")
 def test_normalizer():
-    return Normalizer()
+    return AdvancedNormalizer()
 
 
 @pytest.fixture(scope="session")

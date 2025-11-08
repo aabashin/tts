@@ -4,13 +4,13 @@ from sanic.response import json
 from sanic import response
 from config import settings
 from services.tts import TTS
-from services.normalizer import Normalizer
+from services.normalizer import AdvancedNormalizer
 from services.logger_config import LoggerConfig
 from services.file_service import FileService
 
 app = Sanic("tts")
 tts_service = TTS()
-norm = Normalizer()
+norm = AdvancedNormalizer()
 logger = LoggerConfig.get_logger()
 file_service = FileService()
 
