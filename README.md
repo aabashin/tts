@@ -1,8 +1,8 @@
 ![Python version](https://img.shields.io/badge/python-%3E%3D3.8-green)
 [![Issues](https://img.shields.io/github/issues-raw/aabashin/tts)](https://github.com/aabashin/tts/issues)
 
-![Linter](https://github.com/aabashin/tts/workflows/Linter/badge.svg)
-![Formatter](https://github.com/aabashin/tts/workflows/Formatter/badge.svg)
+[![Linter](https://github.com/aabashin/tts/actions/workflows/pylint.yml/badge.svg)](https://github.com/aabashin/tts/actions/workflows/pylint.yml)
+[![Formatter](https://github.com/aabashin/tts/actions/workflows/pyformatter.yml/badge.svg)](https://github.com/aabashin/tts/actions/workflows/pyformatter.yml)
 
 # Text-To-Speech
 
