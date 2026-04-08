@@ -20,6 +20,7 @@ setuptools = "^80.9.0"
 scipy = "^1.10.1"
 
 [tool.poetry.group.dev.dependencies]
+dynaconf = "^3.2.0"
 black = "^23.3.0"
 flake8 = "^6.0.0"
 pytest = "^7.3.1"
