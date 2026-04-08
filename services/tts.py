@@ -46,7 +46,6 @@ class TTS:
         # speaker = self.speaker
         # put_accent=True
         # put_yo=True
-        
 
         # audio = model.apply_tts(text=example_text,
         #                         speaker=speaker,
